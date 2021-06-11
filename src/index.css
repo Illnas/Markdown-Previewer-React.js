@@ -1,2 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 
+.main-container {
+  height: 100vh;
+  background-color: rgb(226, 223, 223);
+}
+
+.heading {
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+#preview {
+  border: 3px solid #fff;
+  border-radius: 5px;
+  padding: 40px 0;
+  width: 700px;
+  height: 600px;
+  overflow: scroll;
+  text-align: center;
+  white-space: initial;
+  background-color: rgb(235, 235, 235);   
+}
+
+#editor {
+  width: 400px;
+  height: 300px;
+  margin-right: 300px;
+  resize: none;
+  color: #fff;
+  background-color: rgb(102, 102, 102);
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+@media  (min-width: 320px) and (max-width: 480px)  {
+
+  .container {
+    flex-direction: column;
+  }
+
+ #preview {
+   font-size: 15px;
+   padding: 10px;
+   width: 350px;
+   height: 300px;
+ }
+
+ #editor {
+   height: 200px;
+  font-size: 15px;
+  width: 250px;
+  margin-right: 0;
+  margin-bottom: 10px;
+ }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+
+ #preview {
+   font-size: 15px;
+   padding: 10px;
+   width: 350px;
+   height: 600px;
+ }
+
+ #editor {
+   height: 350px;
+  font-size: 15px;
+  width: 350px;
+  margin-right: 35px;
+
+ }
+
+  
+}
